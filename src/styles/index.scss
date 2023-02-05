@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(HelveticaNeue.ttc);
+}
+
+@import "./base";
+@import "./variables";
+
+html {
+  background-color: white;
+}
+
+body {
+  background-color: var(--color-white-1);
+  width: 80%;
+  height: 100vh;
+}

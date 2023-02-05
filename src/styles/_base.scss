@@ -1,0 +1,17 @@
+:root {
+  font-family: "Helvetica Neue", sans-serif, Arial;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
