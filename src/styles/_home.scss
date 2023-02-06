@@ -1,0 +1,37 @@
+.home {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  padding: 0 70px;
+
+  &__header {
+    display: block;
+    width: 100%;
+    padding-block: 25px;
+    border-bottom: 1px solid var(--color-black-1);
+  }
+
+  &__logo {
+    width: 236px;
+    height: 38px;
+  }
+
+  &__logo-2 {
+    position: absolute;
+    width: 299px;
+    height: 299px;
+    left: 1076px;
+    top: 473px;
+
+    mix-blend-mode: multiply;
+  }
+
+  &__img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

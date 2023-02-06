@@ -1,0 +1,32 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+
+  &--black {
+    padding: 18px 126px;
+    background-color: var(--color-black-1);
+    color: var(--color-white);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--color-black);
+    }
+  }
+
+  &--primary {
+    padding: 14px 35px;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 4px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
+  }
+}

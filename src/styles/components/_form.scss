@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  min-height: 100vh;
+
+  //   Main Layout
+
+  &__back-home {
+    position: absolute;
+    width: 9.21px;
+    height: 16px;
+    left: 62px;
+    top: 57px;
+  }
+
+  &__input {
+    padding: 50px 150px 65px;
+    flex-grow: 1;
+    background-color: var(--color-white-1);
+  }
+
+  &__output {
+    width: 822px;
+    max-width: 42%;
+  }
+
+  //
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__form {
+    flex: 1;
+  }
+
+  //   header/footer
+
+  &__header {
+    color: var(--color-black-1);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-black-1);
+  }
+
+  &__footer {
+    display: flex;
+  }
+}

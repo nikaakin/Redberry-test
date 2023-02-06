@@ -1,0 +1,38 @@
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.font-medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.font-small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.font-large {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.font-large-1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
