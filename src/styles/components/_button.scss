@@ -2,6 +2,7 @@
   background-color: transparent;
   border: none;
   font-family: inherit;
+  cursor: pointer;
 
   &--black {
     padding: 18px 126px;
@@ -28,5 +29,23 @@
     &:hover {
       background-color: var(--color-primary-dark);
     }
+  }
+
+  &--blue {
+    background-color: var(--color-tertiary-dark);
+    padding: 5px 19px;
+    border-radius: 4px;
+    color: #fff;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &--blue-1 {
+    background-color: var(--color-tertiary);
+    padding: 14px 21px;
+    border-radius: 4px;
+    color: #fff;
   }
 }

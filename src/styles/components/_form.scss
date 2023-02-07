@@ -33,8 +33,72 @@
 
   &__form {
     flex: 1;
-  }
+    margin-top: 77px;
 
+    &--photo {
+      padding-block: 50px;
+    }
+
+    &-double-inputs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 56px;
+    }
+
+    &-input-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 8px;
+    }
+
+    &-input {
+      background: #ffffff;
+      border: 1px solid var(--color-grey);
+      border-radius: 4px;
+      padding: 14px 16px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--color-black-2);
+      transition: opacity 0.2s;
+
+      &:focus {
+        border: 2px solid var(--color-grey);
+        outline: none;
+      }
+    }
+
+    &-input--textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    &-label {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #000;
+    }
+
+    &-label--photo {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      cursor: pointer;
+      color: var(--color-black-1);
+      margin-right: 19px;
+    }
+
+    &-hint {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--color-black-3);
+    }
+  }
   //   header/footer
 
   &__header {
