@@ -13,6 +13,6 @@ npm run dev
 
 ```
 
--Then open http://localhost:5173/
+- Then open http://localhost:5173/
 
-####-Used stuff: Reactjs, react-hook-forms, sass, axios, react-select, react-input-mask 
+#### Used stuff: Reactjs, react-hook-forms, sass, axios, react-select, react-input-mask 
