@@ -116,8 +116,8 @@ function FormFooter({
           if (
             allFieldsExp.every(
               (fieldName) =>
-                localStorage.getItem(`${fieldName}${indexExp}`) != "" ||
-                localStorage.getItem(`${fieldName}${indexExp}`) != null
+                localStorage.getItem(`${fieldName}${indexExp}`) == "" ||
+                localStorage.getItem(`${fieldName}${indexExp}`) == null
             )
           ) {
             indexExp = +indexEdu - 1;
@@ -142,8 +142,8 @@ function FormFooter({
           if (
             allFieldsEdu.every(
               (fieldName) =>
-                localStorage.getItem(`${fieldName}${indexEdu}`) != "" ||
-                localStorage.getItem(`${fieldName}${indexEdu}`) != null
+                localStorage.getItem(`${fieldName}${indexEdu}`) == "" ||
+                localStorage.getItem(`${fieldName}${indexEdu}`) == null
             )
           ) {
             indexEdu = +indexEdu - 1;
@@ -190,6 +190,8 @@ function FormFooter({
           });
 
           data.append("image", file);
+
+          console.log(formData);
 
           axios
             .post("https://resume.redberryinternship.ge/api/cvs", data)

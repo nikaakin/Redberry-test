@@ -111,6 +111,8 @@ function PrivateInfo() {
                   validateImage();
                   setFormState((s) => !s);
                 };
+
+                reader.readAsDataURL(img);
               },
             })}
             type="file"

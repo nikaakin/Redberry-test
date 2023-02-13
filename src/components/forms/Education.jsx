@@ -111,7 +111,6 @@ function Education() {
                     dirtyFields[`degree${i}`] = true;
                     setFormState((s) => !s);
                   }}
-                  defaultInputValue={localStorage.getItem(`degree${i}`) || ""}
                   className={`border-radius-small ${addValidationClass(
                     dirtyFields[`degree${i}`],
                     errors[`degree${i}`]
