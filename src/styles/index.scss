@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url(./fonts/HelveticaNeue.ttc);
+  font-family: HelveticaNeue;
+  src: url("/src/fonts/HelveticaNeue.ttc");
 }
 
 @import "./variables";
@@ -10,11 +10,12 @@
 
 @import "./components/button";
 @import "./components/form";
-@import "./components/error";
+@import "./components/resume";
 
 html {
   background-color: white;
 }
 
-body {
+#root {
+  position: relative;
 }

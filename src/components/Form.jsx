@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import Resume from "./Resume";
 import leftArrow from "../assets/left-arrow.png";
 
 function Form() {
+  const [formState, setFormState] = useState(true);
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -14,14 +16,20 @@ function Form() {
 
   return (
     <div className="form">
-      <Link to="/" className="form__back-home">
+      <Link
+        to="/"
+        className="form__back-home"
+        onClick={() => {
+          localStorage.clear();
+        }}
+      >
         <img src={leftArrow} alt="Go back to home" />
       </Link>
       <div className="form__input">
-        <Outlet />
+        <Outlet context={setFormState} />
       </div>
       <div className="form__output">
-        <Resume />
+        <Resume formState={formState} />
       </div>
     </div>
   );

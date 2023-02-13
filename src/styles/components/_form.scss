@@ -34,9 +34,13 @@
   &__form {
     flex: 1;
     margin-top: 77px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 
     &--photo {
-      padding-block: 50px;
+      padding-block: 20px;
+      display: flex;
     }
 
     &-double-inputs {
@@ -58,12 +62,20 @@
       border: 1px solid var(--color-grey);
       border-radius: 4px;
       padding: 14px 16px;
-
-      font-weight: 400;
+      font-weight: 500;
       font-size: 16px;
-      line-height: 21px;
-      color: var(--color-black-2);
+      line-height: 20px;
+      color: var(--color-black-1);
+      position: relative;
+
       transition: opacity 0.2s;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: var(--color-black-2);
+      }
 
       &:focus {
         border: 2px solid var(--color-grey);
@@ -74,6 +86,7 @@
     &-input--textarea {
       resize: vertical;
       min-height: 100px;
+      padding-right: 30px;
     }
 
     &-label {

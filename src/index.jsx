@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -12,6 +12,7 @@ import Experience from "./components/forms/Experience";
 import Home from "./components/Home";
 import "./styles/index.scss";
 import Form from "./components/Form";
+import Resume from "./components/Resume";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home />, errorElement: <Error /> },
@@ -38,11 +39,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "/resume", errorElement: <Error />, element: <Resume /> },
   { path: "*", element: <Navigate to="/" /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );
