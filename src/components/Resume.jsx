@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import ResumeLogo from "../assets/resume-logo.png";
 import EmailLogo from "../assets/email.png";
 import PhoneLogo from "../assets/phone.png";
-import { useLocation } from "react-router-dom";
+import leftArrow from "../assets/left-arrow.png";
+import { Link, useLocation } from "react-router-dom";
 
 function Resume({ formState }) {
   const [page, setPage] = useState(false);
@@ -200,19 +201,39 @@ function Resume({ formState }) {
     );
   };
 
-  return (
-    <div
-      className={`resume ${
-        page ? "resume-border  margin-auto margin-bottom-large" : ""
-      }`}
-    >
-      {displayInfoResumeFields()}
-      {displayExperienceResumeFields()}
-      {displayEducationResumeFields()}
+  const displayLink = () => {
+    if (!page) return null;
 
-      <img src={ResumeLogo} className="resume__logo" />
-      {displayPopup()}
-    </div>
+    return (
+      <Link
+        to="/"
+        className="form__back-home"
+        onClick={() => {
+          localStorage.clear();
+        }}
+      >
+        <img src={leftArrow} alt="Go back to home" />
+      </Link>
+    );
+  };
+
+  return (
+    <React.Fragment>
+      {displayLink()}
+
+      <div
+        className={`resume ${
+          page ? "resume-border  margin-auto margin-bottom-large" : ""
+        }`}
+      >
+        {displayInfoResumeFields()}
+        {displayExperienceResumeFields()}
+        {displayEducationResumeFields()}
+
+        <img src={ResumeLogo} className="resume__logo" />
+        {displayPopup()}
+      </div>
+    </React.Fragment>
   );
 }
 
