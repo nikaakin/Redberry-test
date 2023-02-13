@@ -191,8 +191,6 @@ function FormFooter({
 
           data.append("image", file);
 
-          console.log(formData);
-
           axios
             .post("https://resume.redberryinternship.ge/api/cvs", data)
             .then((data) => console.log(data));
