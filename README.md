@@ -2,7 +2,7 @@
 
 ## Live version:
 
-https://cv-maker-rose.vercel.app/
+[https://cv-maker-rose.vercel.app/](https://cv-maker.nikac.in/)
 
 ## Locally :
 
